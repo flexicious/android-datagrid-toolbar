@@ -8,6 +8,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.SubMenu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -39,6 +40,7 @@ public class PagerControl extends ExtendedView implements IExtendedPager, View.O
     private Boolean _pageDropdownDirty = false;
     private Boolean _dispatchEvents = false;
     private Boolean built = false;
+    private static final int SELECT_PAGE_GROUP = 1;
 
     View view;
     PopupMenu popupMenu;
@@ -279,6 +281,13 @@ public class PagerControl extends ExtendedView implements IExtendedPager, View.O
                 popupMenu.getMenu().findItem(R.id.grid_action_print).setVisible(getGrid().getEnablePrint());
                 popupMenu.getMenu().findItem(R.id.grid_action_save_settings).setVisible(getGrid().getEnablePreferencePersistence());
 
+                if (getGrid().getEnablePaging()) {
+                    SubMenu selectMenu = (SubMenu) popupMenu.getMenu().findItem(R.id.grid_action_select_page).getSubMenu();
+                    for (int i = 1; i <= getPageCount(); i++) {
+                        selectMenu.add(SELECT_PAGE_GROUP, i, i, "Page " + i);
+                    }
+                }
+
                 if (getGrid().getEnableFooters()) {
                     popupMenu.getMenu().findItem(R.id.grid_action_show_footer).setVisible(!getGrid().getFooterVisible());
                     popupMenu.getMenu().findItem(R.id.grid_action_hide_footer).setVisible(getGrid().getFooterVisible());
@@ -361,6 +370,15 @@ public class PagerControl extends ExtendedView implements IExtendedPager, View.O
             case R.id.grid_action_clear_filter:
                 getGrid().clearFilter();
                 break;
+            case R.id.grid_action_select_page:
+                break;
+            default:
+
+                if (menuItem.getGroupId() == SELECT_PAGE_GROUP) {
+                    _pageIndex = menuItem.getItemId()-1;
+                    onPageChanged();
+                }
+                break;
         }
         return true;
     }
@@ -370,6 +388,10 @@ public class PagerControl extends ExtendedView implements IExtendedPager, View.O
         super.onConfigurationChanged(newConfig);
         if (getGrid() != null) {
             getGrid().rebuild();
+            //remove popup menu while orientation change
+            if (popupMenu != null) {
+                popupMenu.dismiss();
+            }
         }
     }
 }

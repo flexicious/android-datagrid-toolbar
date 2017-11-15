@@ -46,7 +46,6 @@ public class GridViewFragment extends Fragment {
         grid.buildFromXml(Utill.getStringFromResource(R.raw.flxs_grid));
         grid.setDataProviderJson(Utill.getStringFromResource(R.raw.flxs_data));
         grid.setPagerRenderer(new ClassFactory(PagerControl.class));
-        grid.postInvalidateDelayed(10000);
         return view;
     }
 
