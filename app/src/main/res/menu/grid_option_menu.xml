@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/grid_menu_group_paging"
+        android:visible="true">
+        <item
+            android:id="@+id/grid_action_next_page"
+            android:icon="@drawable/chevron_right_black_24x24"
+            android:title="@string/menu_grid_next_page" />
+        <item
+            android:id="@+id/grid_action_previous_page"
+            android:icon="@drawable/chevron_left_black_24x24"
+            android:title="@string/menu_grid_previous_page" />
+        <item
+            android:id="@+id/grid_action_last_page"
+            android:icon="@drawable/last_page_black_24x24"
+            android:title="@string/menu_grid_last_page" />
+        <item
+            android:id="@+id/grid_action_first_page"
+            android:icon="@drawable/first_page_black_24x24"
+            android:title="@string/menu_grid_firs_page" />
+    </group>
+    <item
+        android:id="@+id/grid_action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/menu_grid_settings" />
+    <item
+        android:id="@+id/grid_action_save_settings"
+        android:icon="@drawable/ic_save_settings"
+        android:title="@string/menu_grid_save_settings" />
+    <item
+        android:id="@+id/grid_action_export"
+        android:icon="@drawable/export_black_24x24"
+        android:title="@string/menu_grid_export" />
+    <item
+        android:id="@+id/grid_action_print"
+        android:icon="@drawable/print"
+        android:title="@string/menu_grid_print" />
+    <group
+        android:id="@+id/grid_menu_group_footer">
+        <item
+            android:visible="false"
+            android:id="@+id/grid_action_show_footer"
+            android:icon="@drawable/show_footer"
+            android:title="@string/menu_grid_show_footer" />
+        <item
+            android:id="@+id/grid_action_hide_footer"
+            android:icon="@drawable/hide_footer"
+            android:title="@string/menu_grid_hide_footer" />
+    </group>
+    <group
+        android:id="@+id/grid_menu_group_filer"
+        android:visible="true">
+        <item
+            android:id="@+id/grid_action_show_filter"
+            android:icon="@drawable/ic_show_filter"
+            android:title="@string/menu_grid_show_filter" />
+        <item
+            android:id="@+id/grid_action_hide_filter"
+            android:icon="@drawable/ic_hide_filter"
+            android:title="@string/menu_grid_hide_filter" />
+        <item
+            android:id="@+id/grid_action_run_filter"
+            android:icon="@drawable/ic_filter"
+            android:title="@string/menu_grid_run_filter" />
+        <item
+            android:id="@+id/grid_action_clear_filter"
+            android:icon="@drawable/ic_clear_filter"
+            android:title="@string/menu_grid_clear_Filter" />
+    </group>
+</menu>

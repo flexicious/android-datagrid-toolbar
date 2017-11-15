@@ -1,0 +1,77 @@
+<grid
+    cellBackgroundColorFunction="getCellBackgroundColor"
+    cellTextColorFunction="getCellTextColor"
+    enablePaging='true'
+    orcePagerRow="true"
+    enableFilters="true"
+    enableFooters="true">
+    <level
+        pageSize="50"
+        selectedKeyField="id">
+        <columns>
+            <column
+                coloheaderText="First Name"
+                columnWidthMode="fitToContent"
+                dataField="first_name"
+                filterControl="TextInput"
+                filterOperation="Contains"
+                textAlign="center" />
+            <column
+                columnWidthMode="fitToContent"
+                dataField="last_name"
+                filterControl="TextInput"
+                filterOperation="Contains"
+                headerText="Last Name"
+                textAlign="center" />
+            <column
+                columnWidthMode="fitToContent"
+                dataField="email"
+                filterControl="TextInput"
+                filterOperation="BeginsWith"
+                headerText="Email id"
+                paddingRight="5"
+                textAlign="left" />
+            <column
+                columnWidthMode="fitToContent"
+                dataField="gender"
+                filterComboBoxBuildFromGrid="true"
+                filterComboBoxWidth="150"
+                filterControl="MultiSelectComboBox"
+                headerText="Gender"
+                textAlign="center" />
+            <column
+                columnWidthMode="fitToContent"
+                dataField="monthly_income"
+                filterControl="NumericRangeBox"
+                filterTriggerEvent="enterKeyUp"
+                footerRenderer="com.example.fexicious.androidDataGrid.renderer.CustomFooterRenderer_CustomFooter"
+                headerText="Monthly Income"
+                labelFunction="dataGridFormatCurrencyLabelFunction"
+                paddingLeft="5"
+                textAlign="right" />
+            <column
+                dataField="Dob"
+                filterControl="DateComboBox"
+                format="date"
+                headerText="Date of birth"
+                textAlign="center"
+                width="250" />
+            <column
+                columnWidthMode="fitToContent"
+                dataField="ip_address"
+                headerText="Ip Address"
+                paddingRight="5"
+                textAlign="left" />
+            <column
+                columnWidthMode="fitToContent"
+                enableCellClickRowSelect="false"
+                headerText=""
+                itemRenderer="com.example.fexicious.androidDataGrid.renderer.ButtonRenderer"
+                paddingBottom="1"
+                paddingLeft="10"
+                paddingRight="10"
+                paddingTop="1"
+                sortable="false" />
+        </columns>
+    </level>
+</grid>
