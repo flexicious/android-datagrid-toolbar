@@ -23,8 +23,9 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.flexicious.screens.SettingsActivity"
-            android:theme="@android:style/Theme.Dialog"
-            android:windowSoftInputMode="stateHidden" />
+            android:theme="@android:style/Theme.Material.Dialog"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="NewApi" />
         <activity
             android:name="com.flexicious.screens.SortActivity"
             android:theme="@android:style/Theme.Dialog"
