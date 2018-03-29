@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.fexicious.androidDataGrid.fragment.GridViewFragment">
+    tools:context="com.example.flexicious.androidDataGrid.fragment.GridViewFragment">
 
     <com.flexicious.nestedtreedatagrid.FlexDataGrid
         android:id="@+id/flxs_grid_view"

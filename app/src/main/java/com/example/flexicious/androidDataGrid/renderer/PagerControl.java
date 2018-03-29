@@ -1,4 +1,4 @@
-package com.example.fexicious.androidDataGrid.renderer;
+package com.example.flexicious.androidDataGrid.renderer;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,7 +15,7 @@ import android.widget.Button;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-import com.example.fexicious.androidDataGrid.R;
+import com.example.flexicious.androidDataGrid.R;
 import com.flexicious.controls.ComboBox;
 import com.flexicious.controls.core.Event;
 import com.flexicious.controls.core.ExtendedView;

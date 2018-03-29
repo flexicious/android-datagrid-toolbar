@@ -1,4 +1,4 @@
-package com.example.fexicious.androidDataGrid.renderer;
+package com.example.flexicious.androidDataGrid.renderer;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.fexicious.androidDataGrid.R;
+import com.example.flexicious.androidDataGrid.R;
 
 public class ButtonRenderer extends android.support.v7.widget.AppCompatButton implements View.OnClickListener {
 

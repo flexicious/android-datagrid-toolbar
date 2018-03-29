@@ -1,4 +1,4 @@
-package com.example.fexicious.androidDataGrid.utills;
+package com.example.flexicious.androidDataGrid.utills;
 
 import android.graphics.Color;
 

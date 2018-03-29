@@ -1,17 +1,15 @@
-package com.example.fexicious.androidDataGrid.fragment;
+package com.example.flexicious.androidDataGrid.fragment;
 
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
-import com.example.fexicious.androidDataGrid.R;
-import com.example.fexicious.androidDataGrid.Utill;
-import com.example.fexicious.androidDataGrid.renderer.PagerControl;
+import com.example.flexicious.androidDataGrid.R;
+import com.example.flexicious.androidDataGrid.Utill;
+import com.example.flexicious.androidDataGrid.renderer.PagerControl;
 import com.flexicious.controls.core.ClassFactory;
 import com.flexicious.nestedtreedatagrid.FlexDataGrid;
 import com.flexicious.nestedtreedatagrid.FlexDataGridColumn;

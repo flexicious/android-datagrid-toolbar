@@ -1,8 +1,8 @@
-package com.example.fexicious.androidDataGrid;
+package com.example.flexicious.androidDataGrid;
 
 import android.graphics.Color;
 
-import com.example.fexicious.androidDataGrid.utills.StyleManager;
+import com.example.flexicious.androidDataGrid.utills.StyleManager;
 import com.flexicious.nestedtreedatagrid.interfaces.IFlexDataGridCell;
 
 import java.io.BufferedReader;

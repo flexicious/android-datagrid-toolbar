@@ -1,4 +1,4 @@
-package com.example.fexicious.androidDataGrid;
+package com.example.flexicious.androidDataGrid;
 
 import android.content.Intent;
 import android.net.Uri;

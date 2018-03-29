@@ -1,4 +1,4 @@
-package com.example.fexicious.androidDataGrid.renderer;
+package com.example.flexicious.androidDataGrid.renderer;
 
 import android.content.Context;
 import android.util.AttributeSet;
