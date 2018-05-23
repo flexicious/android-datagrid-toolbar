@@ -42,6 +42,7 @@ public class GridViewFragment extends Fragment {
         FlexDataGrid grid = (FlexDataGrid) view.findViewById(R.id.flxs_grid_view);
         grid.delegate = this;
         grid.buildFromXml(Utill.getStringFromResource(R.raw.flxs_grid));
+        grid.alternatingItemColors = new Integer[]{0x00000000, 0x00000000};
         grid.setDataProviderJson(Utill.getStringFromResource(R.raw.flxs_data));
         grid.setPagerRenderer(new ClassFactory(PagerControl.class));
         return view;
